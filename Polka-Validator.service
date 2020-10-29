@@ -1,0 +1,13 @@
+[Unit]
+Description=Polkadot Validator
+
+[Service]
+User=rocket
+WorkingDirectory=/home/rocket/
+ExecStart=/home/rocket/polkadot-node.sh --validator --name "Appitize_Node_By_Jobs"
+Restart=always
+RestartSec=120
+
+[Install]
+WantedBy=multi-user.target
+
